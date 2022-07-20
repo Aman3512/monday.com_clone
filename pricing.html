@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <style>
+        #pricePage_firstDiv{
+            border: 2px solid black;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        #pricePage_firstDiv>h1{
+            font-size: 40px;
+        }
+        #pricePage_firstDiv>p{
+            font-size: 20px;
+        }
+        .blue_color{
+            color: rgb(85,89,223);
+        }
+        button{
+            font-size: 20px;
+            color: white;
+            background-color: rgb(108,108,255);
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: 0px;
+        }
+        #pricePage_SecondDiv{
+            display: grid;
+
+        }
+        #lable1{
+            font-size: 18px;
+            display: inline;
+        }
+        #pricePage_SecondDiv > select{
+            width: 10%;
+            font-size: 20px;
+            border: 2px solid teal;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="pricePage_firstDiv">
+        <h1>Supercharge your teamwork. Start <span class="blue_color">free</span>.</h1>
+        <p>Unlimited boards and workflows. No credit card needed.</p>
+        <button>Get Started -></button>
+    </div>
+    <div id="pricePage_SecondDiv">
+        <label id="lable1">Choose team size: </label>
+        <select id="seats">
+            <option value="">3 Seats &nbsp;</option>
+            <option value="">5 Seats &nbsp;</option>
+            <option value="">10 Seats &nbsp;</option>
+            <option value="">15 Seats &nbsp;</option>
+            <option value="">20 Seats &nbsp;</option>
+            <option value="">25 Seats &nbsp;</option>
+            <option value="">30 Seats &nbsp;</option>
+            <option value="">40 Seats &nbsp;</option>
+            <option value="">50 Seats &nbsp;</option>
+            <option value="">100 Seats &nbsp;</option>
+            <option value="">200+ Seats &nbsp;</option>
+        </select>
+        <p>Yearly save 18% | Monthly</p>
+    </div>
+</body>
+</html>
