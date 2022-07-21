@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+#sahil_navbar{
+    width: 100%;;
+    height: 80px;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+}
+#leftpart{
+    width: 50%;;
+    height: 80px;
+    border: 1px solid transparent;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+#leftpart>ul{
+    /* padding: 0 10px; */
+    margin-left: 10px;
+    float: left;
+}
+#leftpart>ul>li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+}
+#leftpart>ul>li>a{
+    display: block;
+    color: #92797d;
+    width: auto;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+}
+#leftpart>ul>li>a:nth-child(1){
+    width: 87px;
+    text-align: center;
+}
+#leftpart>ul>li>a:nth-child(2){
+    width: 87px;
+    text-align: center;
+}
+#leftpart>ul>li>a:nth-child(3){
+    width: 87px;
+    text-align: center;
+}
+#leftpart>ul>li>a:nth-child(4){
+    width: 150px;
+    text-align: center;
+}
+#leftpart>ul>li>a:hover{
+    background: #cec6ff;
+    color: #539cce;
+    height: auto;
+    border-radius: 10px;
+}
+#leftpart ul .animation{
+    position: absolute;
+    height: 5px;
+    bottom:  0;
+    z-index: 0;
+    background: #539cce;
+    transition: all .5s ease 0s;
+}
+#leftimg{
+    width: 29%;
+    height:70%;
+}
+/* RightPart */
+#rightpart{
+        width: 40%;;
+        height: 80px;
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        margin-left: 80px;
+}
+#rightpart>ul{
+    margin-left: 10px;
+    float: right;
+    padding: 0 20px;
+}
+#rightpart>ul>li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+#rightpart>ul>li>a{
+    display: block;
+    color: #92797d;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+}
+#rightpart>ul>li>a:hover{
+    background: #cec6ff;
+    color: #539cce;
+    height: auto;
+    border-radius: 10px;
+}
+#rightpart>button{
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid blue;
+    background-color: #6c6cff;
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
