@@ -397,11 +397,55 @@ border-radius: 20px;" src="https://dapulse-res.cloudinary.com/video/upload/q_aut
 
 </div>
 
+<div id="slider-div">
+
+  <div>
+    <p>See how <br>our customers <br>
+       <b>drive impact</b></p>
+  </div>
+
+  <div id="home-page-slider-board">
+
+    <img id="slider-images" onContextMenu="return false;" src= "./images/slider1.png" alt=""> 
+  
+  </div>
+
+</div>
+
+
+
   </body>
 </html>
 
 <script>
    
+let images = [
+  "./images/slider1.png",
+  "./images/slider2.png",
+  "./images/slider3.png",
+  "./images/slider4.png",
+  "./images/slider5.png"
+]
+
+
+const displaySlider = document.getElementById('slider-images');
+
+let i=0;
+
+setInterval(function(){
+
+  
+if(i==images.length){
+  i=0;
+}
+
+  displaySlider.src = images[i]
+i++;
+
+},2500)
+
+
+
   document.getElementById("boards").addEventListener("click",()=>{
 
     document.getElementById("logo-aman").src = "https://dapulse-res.cloudinary.com/image/upload/e_colorize,co_rgb:6C6CFF/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/tabs/board_icon.svg"

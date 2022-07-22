@@ -427,6 +427,25 @@ padding: 160px 90px;
     margin-top: 25px;
 }
 
+#slider-div{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 110px;
+    color: #333333;
+
+}
+#slider-div>div:first-child p{
+    font-size: 45px;
+    /* text-align: center; */
+}
+#slider-div>div:first-child{
+  padding-top: 70px;
+}
+#slider-div>div:last-child img{
+ width: 100%;
+}
 
 *{
     padding: 0px;
