@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="login_navbar">
+        <img src="https://cdn.monday.com/images/logos/monday_logo_short.png" alt="">
+    </div>
+    <p>Log in to your account</p>
+    <h4>Enter your work email address</h4>
+    <input type="email" placeholder="Example@gmail.com" name="" id="email">
+    <input type="password" id="password1" placeholder="Enter your password">
+    <button onclick="login()">Login</button>
+    
+    <p id="bottomp">Or Sign in with</p>
+    <div id="googleone">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="">
+        <p>Google</p>
+    </div>
+    <div id="btmdivv">
+        <p>Don't have an account yet?</p>
+        <p><a href="signup.html">Sign up</a></p>
+    </div>
+</html>
+<script>
+    let userdata = JSON.parse(localStorage.getItem("userdata")) || [];
+    function login(){
+        let email = document.querySelector("#email").value;
+        let password = document.querySelector("#password1").value;
+        check(email,password)
+    }
+    function check(email,password){
+        let user = userdata.filter(function (el){
+        return el.email===email && el.password===password
+    })
+    if(user.length>0){
+        alert("success")
+        window.location.href="index.html"
+    }else{
+        alert("failed")
+    }
+    }
+
+
+</script>
