@@ -5,7 +5,7 @@ let footer = () => {
       alt=""
     />
     <p>Pricing</p>
-    <a href="contact-us.html"><p>Contact us</p></a>
+    <a href="../styles/contact-us.html"><p>Contact us</p></a>
     <p>Templates</p>
     <p>SMB</p>
     <p>Enterprise</p>
