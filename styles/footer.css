@@ -1,0 +1,70 @@
+#footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#footer-container > #monday > img {
+  width: 50%;
+  height: 30px;
+}
+#icon-1 > img,
+#icon-2 > img,
+#icon-3 > img,
+#icon-4 > img,
+#icon-5 > img,
+#icon-6 > img,
+#icon-7 > img {
+  width: 7%;
+  height: 20px;
+  margin-top: 5%;
+}
+
+#icon-1,
+#icon-2,
+#icon-3,
+#icon-4,
+#icon-5,
+#icon-6,
+#icon-1 {
+  display: flex;
+}
+
+h3,
+p {
+  color: grey;
+  font-weight: lighter;
+}
+#monday,
+#features,
+#monday-products,
+#use-cases,
+#company,
+#resources {
+  width: 18%;
+}
+#monday {
+  margin-left: 40px;
+}
+#icon-1 > p {
+  margin-left: 10px;
+}
+#icon-2 > p {
+  margin-left: 10px;
+}
+#icon-3 > p {
+  margin-left: 10px;
+}
+#icon-4 > p {
+  margin-left: 10px;
+}
+#icon-5 > p {
+  margin-left: 10px;
+}
+#icon-6 > p {
+  margin-left: 10px;
+}
+#icon-7 > p {
+  margin-left: 25px;
+  margin-top: -8%;
+}
