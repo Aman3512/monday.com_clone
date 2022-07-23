@@ -1,0 +1,29 @@
+.div2{
+    display: flex;
+    padding: 80px 40px
+  }
+  .dropdown{
+    display: flex;
+    width: 60%;
+  }
+  .dropdown>button{
+    border: none;
+    border-radius: 0%;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration-line: underline;
+  }
+  .dropdown>button:hover{
+    background-color: aliceblue;
+  }
+#dropdown-cont{
+    display: grid;
+}
+#dropdown-cont>div>img{
+    width: 50%;
+    margin-left: 660px;
+}
+#dropdown-cont>div>img{
+    position: relative;
+    bottom: 120px;
+}
