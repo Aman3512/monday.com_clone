@@ -1,9 +1,23 @@
+#navbar-display-board{
+    position: sticky;
+    top: 80px;
+    z-index: 3;
+}
+
+
 #sahilOuter{
-    width: 95%;
+    width: 100%;
     height: 580px;
     border: 1px solid transparent;
     margin: auto;
     display: flex;
+    padding-left: 70px;
+    padding-top: 20px;
+    /* margin-top: 30px; */
+    /* border: 1px solid red; */
+
+    /* z-index: 3; */
+    background-color: white;
 }
 #sahilFirst{
     width: 34%;
@@ -12,11 +26,11 @@
 }
 #sahilFirst>div:nth-child(1)>h3{
     font-size: 25px;
-    color: #848593;
+    color: #494a50;
 }
 #sahilFirst>div:nth-child(1)>p{
     color: #676879;
-    margin-top: -19px;
+    margin-top: 2px;
 }
 #l_top2{
     margin-top: 35px;
@@ -53,7 +67,7 @@
     height: auto;
     border: 1px solid transparent;
     margin-left: 17px;
-    margin-top: -29px;
+    margin-top: -5px;
 }
 #top_right>p:first-child{
     font-size: 24px;
@@ -62,8 +76,8 @@
 }
 #top_right>p:last-child{
     font-size: 15px;
-    color: black;
-    margin-top: -16px;
+    color: #676879;
+    margin-top: 6px;
 }
 #top2_bottom{
     font-size: 14px;
@@ -127,7 +141,7 @@
     height: auto;
     border: 1px solid transparent;
     margin-left: 17px;
-    margin-top: -29px;
+    margin-top: -6px;
 }
 #top3_right>p:first-child{
     font-size: 24px;
@@ -136,8 +150,8 @@
 }
 #top3_right>p:last-child{
     font-size: 15px;
-    color: black;
-    margin-top: -16px;
+    color: #676879;
+    margin-top: 6px;
 }
 #top3_bottom{
     font-size: 14px;
@@ -199,7 +213,7 @@
     height: auto;
     border: 1px solid transparent;
     margin-left: 17px;
-    margin-top: -29px;
+    margin-top: -6px;
 }
 #top4_right>p:first-child{
     font-size: 24px;
@@ -208,8 +222,8 @@
 }
 #top4_right>p:last-child{
     font-size: 15px;
-    color: black;
-    margin-top: -16px;
+    color: #676879;
+    margin-top: 6px;
 }
 #top4_bottom{
     font-size: 14px;
@@ -282,16 +296,17 @@
     height: auto;
     border: 1px solid transparent;
     margin-left: 17px;
-    margin-top: -29px;
-}#mtop2_right>p:first-child{
+    margin-top: -6px;
+}
+#mtop2_right>p:first-child{
     font-size: 24px;
     color: black;
     font-weight: 25px;
 }
 #mtop2_right>p:last-child{
     font-size: 15px;
-    color: black;
-    margin-top: -16px;
+    color: #676879;
+    margin-top: 6px;
 }
 #mtop2_bottom{
     font-size: 14px;
@@ -355,7 +370,7 @@ mtop2_bottom>p:nth-child(1){
     height: auto;
     border: 1px solid transparent;
     margin-left: 17px;
-    margin-top: -29px;
+    margin-top: -6px;
 }#mtop3_right>p:first-child{
     font-size: 24px;
     color: black;
@@ -363,8 +378,8 @@ mtop2_bottom>p:nth-child(1){
 }
 #mtop3_right>p:last-child{
     font-size: 15px;
-    color: black;
-    margin-top: -16px;
+    color: #676879;
+    margin-top: 6px;
 }
 #mtop3_bottom{
     font-size: 14px;
@@ -412,12 +427,16 @@ mtop3_bottom>p:nth-child(1){
     margin-top: 35px;
 }
 #sahilFourth>h4{
+    font-size: 18px;
+    margin-top: -10px;
     color: #8e8f9c;
 }
 #fourthworkfoams{
     display: flex;
     border: 1px solid transparent;
     align-items: center;
+    margin-top: 60px;
+    margin-left: 15px;
 }
 #fourthworkfoams>img{
     width: 30px;
@@ -432,7 +451,8 @@ mtop3_bottom>p:nth-child(1){
     display: flex;
     border: 1px solid transparent;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 15px;
 }
 #fourthCanvas>img{
     width: 30px;
@@ -443,3 +463,4 @@ mtop3_bottom>p:nth-child(1){
     font-size: 18px;
     margin-left: 10px;
 }
+

@@ -11,7 +11,19 @@
     border: 1px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0px;
 }
+
+#leftimg{
+    cursor: pointer;
+}
+
+#sahil_navbar li{
+    cursor: pointer;
+}
+
 #leftpart{
     width: 50%;;
     height: 80px;
@@ -66,7 +78,7 @@
     height: 5px;
     bottom:  0;
     z-index: 0;
-    background: #539cce;
+    background: #8ecdf7;
     transition: all .5s ease 0s;
 }
 #leftimg{
@@ -117,5 +129,7 @@
     color: white;
     font-size: 17px;
     margin-left: 10px;
+    border: none;
 }
+
 
