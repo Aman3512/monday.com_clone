@@ -1,0 +1,85 @@
+#login_navbar{
+    width: 101%;;
+    height: 80px;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    margin-top: -10px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+}
+#login_navbar>img{
+    width: 14%;
+    height: 50px;
+    margin-left: 15px;
+}
+body>p{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 40px;
+}
+body>h4{
+    text-align: center;
+    font-size: 19px ;
+}
+#email,#password1{
+    width:350px;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    padding-left: 20px;
+    font-size: 20px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+}
+body>button{
+    display: flex;
+    margin: auto;
+    width: 375px;
+    height:43px;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #0073ea;
+    border: none;
+    padding-left: 170px;
+    font-size: 19px;
+    color: white;
+    border-radius: 5px;
+}
+#bottomp{
+    font-size: 20px;
+    margin-top: 35px;
+}
+#googleone{
+    width: 120px;
+    height: 45px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  #cccccc;
+    border-radius: 5px;
+}
+#googleone>img{
+    width: 25px;
+    height: 25px;
+}
+#googleone>p{
+    margin-left: 10px;
+}
+#btmdivv{
+    width: 270px;
+    height: 30px;
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+}
+#btmdivv>p:last-child{
+    color: #83d1fb;
+}

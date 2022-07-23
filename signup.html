@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="login_navbar">
+        <img src="https://cdn.monday.com/images/logos/monday_logo_short.png" alt="">
+    </div>
+    <p>Create your account</p>
+    <h4>Enter your work email address</h4>
+    <input type="text" placeholder="Enter your name" id="namesignup">
+    <input type="email" placeholder="Example@gmail.com" name="" id="email">
+    <input type="password" placeholder="Create your password" id="password">
+    <button id="btnn" onclick="signupFunc()">Create Account</button>
+    
+    
+    
+</html>
+<script>
+    let userdata = JSON.parse(localStorage.getItem("userdata")) || [];
+    function signupFunc(){
+        let name = document.querySelector("#namesignup").value;
+        let email = document.querySelector("#email").value;
+        let password = document.querySelector("#password").value;
+        let obj = {
+            name:name,
+            email:email,
+            password:password
+
+        }
+        userdata.push(obj)
+        localStorage.setItem("userdata", JSON.stringify(userdata))
+        window.location.href="login.html"
+    }
+</script>

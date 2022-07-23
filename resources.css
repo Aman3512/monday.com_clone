@@ -1,0 +1,82 @@
+#navbar-display-board{
+    position: sticky;
+    top: 80px;
+    z-index: 3;
+}
+
+
+
+
+#resourcesouter{
+    width: 100%;
+    height: 610px;
+    border: 1px solid transparent;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.resourcesfirst{
+    width: 22%;
+    height: 600px;
+    border: 1px solid transparent;
+}
+.resourcesfirst>p{
+    margin-top: 40px;
+    color: #676f86;
+}
+.innerdivs{
+    width: 100%;
+    height: 90px;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    margin-left: 4px;
+}
+.innerdivs>p:first-child{
+    font-size: 19px;
+}
+.innerdivs>p:last-child{
+    font-size: 16px;
+    color: #676f86;
+    margin-top: 8px;
+}
+/* Fourth Section */
+#fourthdiv{
+    width: 30%;
+    height: 650px;
+    border: 1px solid transparent;
+    background-color: #f0f3ff;
+}
+#fourthdiv>p{
+    font-size: 16px;
+    margin-left: 36px;
+    margin-top: 43px;
+    color: #676f86;
+}
+.fourthdivone{
+    width: 80%;
+    height: 230px;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.fourthdivone>img{
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0px 0px;
+}
+.firstptag{
+    font-size: 16px;
+    color: #676f86;
+    margin-left: 14px;
+    margin-right: 20px;
+}
+.secondptag{
+    color: #676f86;
+    margin-left: 14px;
+    text-decoration-line: underline;
+}
