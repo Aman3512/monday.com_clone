@@ -68,3 +68,24 @@ p {
   margin-left: 25px;
   margin-top: -8%;
 }
+a {
+  text-decoration: none;
+}
+#aTag > p:hover {
+  background-color: azure;
+  color: blue;
+}
+#monday > p:hover {
+  background-color: azure;
+  color: blue;
+  cursor: pointer;
+}
+#features p,
+#monday-products p,
+#icon-6 p,
+#icon-7 p,
+#use-cases p,
+#company p,
+#resources p:hover {
+  cursor: pointer;
+}

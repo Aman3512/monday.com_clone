@@ -4,8 +4,8 @@ let footer = () => {
       src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png"
       alt=""
     />
-    <p>Pricing</p>
-    <a href="../styles/contact-us.html"><p>Contact us</p></a>
+    <a id="pricing" href="../pricing.html"><p>Pricing</p></a>
+    <a id="aTag" href="../styles/contact-us.html"><p>Contact us</p></a>
     <p>Templates</p>
     <p>SMB</p>
     <p>Enterprise</p>
@@ -31,7 +31,8 @@ let footer = () => {
           src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/wm_icon_footer.png"
           alt=""
         />
-        <p>monday work management</p>
+        <a id="pricing" href="../monday work management/monday-product.html"><p>monday work management</p></a>
+
       </div>
       <div id="icon-2">
         <img
