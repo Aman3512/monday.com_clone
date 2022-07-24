@@ -1,42 +1,50 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Page</title>
     <style>
-        #pricePage_firstDiv{
-            border: 2px solid black;
+        #pricePage_firstDiv {
+            /* border: 2px solid black; */
             width: 80%;
             margin: auto;
             text-align: center;
         }
-        #pricePage_firstDiv>h1{
+
+        #pricePage_firstDiv>h1 {
             font-size: 40px;
         }
-        #pricePage_firstDiv>p{
+
+        #pricePage_firstDiv>p {
             font-size: 20px;
         }
-        .blue_color{
-            color: rgb(85,89,223);
+
+        .blue_color {
+            color: rgb(85, 89, 223);
         }
-        button{
+
+        button {
             font-size: 20px;
             color: white;
-            background-color: rgb(108,108,255);
+            background-color: rgb(108, 108, 255);
             padding: 10px 30px;
             border-radius: 30px;
             border: 0px;
         }
-        #pricePage_SecondDiv{
+
+        #pricePage_SecondDiv {
             display: grid;
 
         }
-        #lable1{
+
+        #lable1 {
             font-size: 18px;
             display: inline;
         }
-        #pricePage_SecondDiv > select{
+
+        #pricePage_SecondDiv>select {
             width: 10%;
             font-size: 20px;
             border: 2px solid teal;
@@ -44,8 +52,353 @@
             border-radius: 5px;
         }
 
-    </style>
+        #lable1 {
+            padding-right: 20px;
+        }
+
+        #innerdivOne {
+            display: flex;
+            width: 30%;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        #innerdivOne>select {
+            font-size: 25px;
+            border: 2px solid teal;
+        }
+
+        #pricePage_SecondDiv {
+            display: flex;
+            width: 80%;
+            /* border: 2px solid red; */
+            margin: auto;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        #innerdivSecond {
+            font-size: 22px;
+        }
+
+        #pricing_mainContainer {
+            display: flex;
+
+            width: 80%;
+            height: 1000px;
+            /* border: 2px solid red; */
+            margin: auto;
+            margin-top: 50px;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .pricing_innerContainer {
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid teal; */
+            border-radius: 5px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+
+        #h1 {
+            display: inline;
+            font-size: 50px;
+        }
+
+        .innercontainerOne {
+            margin-left: 20px;
+        }
+
+        .innercontainerOne>button+p {
+            font-size: 17px;
+            line-height: 25px;
+            color: gray;
+            margin-top: 30px;
+        }
+
+        .innercontainerOne>h2+p+p {
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        #innerBut {
+            font-size: 14px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        #innerBut+p+hr {
+            width: 80%;
+            margin: auto;
+            border: 1px solid gray;
+            margin-top: 100px;
+        }
+
+        .innercontainerOne>h2+div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 60%;
+            margin-top: -50px;
+            margin-bottom: -30px;
+        }
+
+        .innercontainerOne>h2+div+p {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #h1+p {
+            font-size: 20px;
+        }
+
+        .innercontainerTwo {
+            margin-left: 20px;
+        }
+
+        .innercontainerTwo>h2 {
+            width: 60%;
+        }
+
+        .innercontainerTwo>p {
+            font-weight: 300px;
+            color: gray;
+        }
+
+        #dropDownPTag {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        #aboveTheSymbolLines {
+            font-size: 40px;
+            /* margin-top: 200px; */
+            width: 60%;
+            margin: auto;
+            color: rgb(51, 51, 51);
+            text-align: center;
+        }
+
+        #logoSymbol {
+            /* border: 2px solid red; */
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        #logoSymbol>div>img {
+            width: 70%;
+            display: grid;
+            margin: auto;
+            /* margin-top: 50px; */
+
+        }
+
+        /* ----------------------------------------------------------------------------------------------------------------------- */
+        /* slider automation css  */
+        body{
+    padding: 0;
+    margin: 0;
+    /* background-color: floralwhite; */
+}
+
+/* h1{
+    margin-top: 50px;
+    margin-left: 510px;
+    font-size: 60px;
+    font-family: 'karla', sans-serif;
+    font-weight: lighter;
+} */
+
+.slider-frame{
+    overflow: hidden;
+    /* height: 800px; */
+    height: 800px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/* ------------------------------------------------------------------ */
+/* slide animation  */
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 11s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+/* css of FAQ starts from here  */
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+/* section used for centering process  */
+section{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #3c4053; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width:100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
+
+.accordion-link .ion-md-remove{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    color: rgba(255,255,255,.6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove{
+    display: block;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#shreyash{
+    font-size: 16px;
+}
+
+#shreyashH2{
+    /* color: red; */
+    font-size: 22px;
+}
+#samH1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#lastDiv2941{
+    margin: auto;
+    text-align: center;
+}
+
+#lastDiv2941>p:first-child{
+    font-size: 35px;
+}
+#lastDiv2941>p:nth-child(2){
+    font-size: 25px;
+    margin-top: -20px;
+    color: gray;
+}
+#lastDiv2941>button{
+    background-color: rgb(108,108,255);
+    margin-bottom: 50px;
+}
+
+
+
+
+
+</style>
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
 </head>
+
 <body>
     <div id="pricePage_firstDiv">
         <h1>Supercharge your teamwork. Start <span class="blue_color">free</span>.</h1>
@@ -53,21 +406,499 @@
         <button>Get Started -></button>
     </div>
     <div id="pricePage_SecondDiv">
-        <label id="lable1">Choose team size: </label>
-        <select id="seats">
-            <option value="">3 Seats &nbsp;</option>
-            <option value="">5 Seats &nbsp;</option>
-            <option value="">10 Seats &nbsp;</option>
-            <option value="">15 Seats &nbsp;</option>
-            <option value="">20 Seats &nbsp;</option>
-            <option value="">25 Seats &nbsp;</option>
-            <option value="">30 Seats &nbsp;</option>
-            <option value="">40 Seats &nbsp;</option>
-            <option value="">50 Seats &nbsp;</option>
-            <option value="">100 Seats &nbsp;</option>
-            <option value="">200+ Seats &nbsp;</option>
-        </select>
-        <p>Yearly save 18% | Monthly</p>
+        <div id="innerdivOne">
+            <label id="lable1">Choose team size: </label>
+            <select id="seats">
+                <option value="">3 Seats &nbsp;</option>
+                <option value="">5 Seats &nbsp;</option>
+                <option value="">10 Seats &nbsp;</option>
+                <option value="">15 Seats &nbsp;</option>
+                <option value="">20 Seats &nbsp;</option>
+                <option value="">25 Seats &nbsp;</option>
+                <option value="">30 Seats &nbsp;</option>
+                <option value="">40 Seats &nbsp;</option>
+                <option value="">50 Seats &nbsp;</option>
+                <option value="">100 Seats &nbsp;</option>
+                <option value="">200+ Seats &nbsp;</option>
+            </select>
+        </div>
+        <div id="innerdivSecond">
+            <p><span class="blue_color">Yearly save 18%</span> | Monthly</p>
+        </div>
+    </div>
+
+    <!-- here we write code of main container  -->
+    <!-- //------------------------------------------------------------------------------------------------------------------------------------// -->
+
+    <div id="pricing_mainContainer">
+        <div class="pricing_innerContainer">
+            <div class="innercontainerOne">
+                <h2>Free</h2>
+                <div>
+                    <p id="h1">$0</p>
+                    <p>free forever</p>
+                </div>
+                <p>up to 5 seats</p>
+                <button id="innerBut">Try for free</button>
+                <p>For individuals looking to <br>
+                    keep track of their work</p>
+                <hr>
+            </div>
+            <div class="innercontainerTwo">
+                <h2 id="shreyashH2">Free plan includes:</h2>
+                <p id="shreyash">Up to 3 boards </p>
+                <p id="shreyash">Unlimited docs</p>
+                <p id="shreyash">200+ templates</p>
+                <p id="shreyash">over 20 column types</p>
+                <p id="shreyash">upto 5 team members</p>
+                <p id="shreyash">ios and android apps</p>
+
+            </div>
+
+        </div>
+        <div class="pricing_innerContainer">
+            <div class="innercontainerOne">
+                <h2>Basic</h2>
+                <div>
+                    <p id="h1" style="color: rgb(163,94,220);">$8</p>
+                    <p>seat/ month</p>
+                </div>
+                <p>Total $24/ month</p>
+                <button id="innerBut">Try for free</button>
+                <p>Manage all your teams’ <br> work in one place</p>
+                <hr>
+            </div>
+            <div class="innercontainerTwo">
+                <h2 style="width: 90%;" id="shreyashH2">Includes Free, plus:</h2>
+                <p id="shreyash">Unlimited free viewers</p>
+                <p id="shreyash">Unlimited items</p>
+                <p id="shreyash">5 gb file storage</p>
+                <p id="shreyash">Prioritised customer <br> support</p>
+                <p id="shreyash">Create a dashboard <br> based on 1 board</p>
+                <!-- <p>ios and android apps</p>  -->
+
+            </div>
+
+
+        </div>
+        <div class="pricing_innerContainer">
+            <div class="innercontainerOne">
+                <h2>Standard</h2>
+                <div>
+                    <p id="h1" style="color: rgb(0,133,255);">$10</p>
+                    <p>seat/ month</p>
+                </div>
+                <p>Total $30/ month</p>
+                <button id="innerBut">Try for free</button>
+                <p>Collaborate and <br> optimize your team process</p>
+                <hr>
+            </div>
+            <div class="innercontainerTwo">
+                <h2 style="width: 90%;" id="shreyashH2">Includes Basic, plus:</h2>
+                <p id="shreyash">Timeline & Gantt views</p>
+                <p id="shreyash">Calender view</p>
+                <p id="shreyash">Guest access</p>
+                <p id="shreyash">Automations <br>(250 actions per month)</p>
+                <p id="shreyash">Integrations <br>(250 actions per month)</p>
+                <p id="shreyash">Create a dashboard <br> that combines up to 5 <br> boards</p>
+
+            </div>
+
+        </div>
+        <div class="pricing_innerContainer">
+            <div class="innercontainerOne">
+                <h2>Pro</h2>
+                <div>
+                    <p id="h1" style="color: rgb(0,162,91);">$16</p>
+                    <p>seat/ month</p>
+                </div>
+                <p>Total $48/ month</p>
+                <button id="innerBut">Try for free</button>
+                <p>Streamline and run your <br> teams' complex workflows</p>
+                <hr>
+            </div>
+            <div class="innercontainerTwo">
+                <h2 style="width: 100%;" id="shreyashH2">Include Standard, plus:</h2>
+                <p id="shreyash">Private boards are docs</p>
+                <p id="shreyash">Chart view</p>
+                <p id="shreyash">Time tracking</p>
+                <p id="shreyash">Formula column</p>
+                <p id="shreyash">Dependency column</p>
+                <p id="shreyash">Automations <br>(25,000 actions per <br> month )</p>
+                <p id="shreyash">Create a dashboard <br> that combines upto 10 <br> boards</p>
+
+            </div>
+
+        </div>
+        <div class="pricing_innerContainer">
+            <div class="innercontainerOne">
+                <h2>Enterprise</h2>
+                <div style="margin: auto; margin-bottom:70px">
+                    <!-- <p id="h1">$0</p>
+                    <p>free forever</p> -->
+                    <img style="margin-left: -30px"
+                        src="https://monday.com/static/img/pricing/contact_us_plan_enterprise.png" alt="">
+                </div>
+                <!-- <p>up to 5 seats</p> -->
+                <button id="innerBut"
+                    style="background-color: white; color: rgb(108,108,255); border: 1px solid rgb(108,108,255);">Contact
+                    us</button>
+                <p>For organizations seeking <br> enterprise-grade features</p>
+                <hr>
+            </div>
+            <div class="innercontainerTwo">
+                <h2 style="width: 100%;" id="shreyashH2">Includes Pro, <br> plus:</h2>
+                <p id="shreyash">Enterprise-scale <br> Automations & <br> Integrations</p>
+                <p id="shreyash">Enterprise-grade <br> Security <br> & governance</p>
+                <p id="shreyash">Advanced reporting <br> & analytics</p>
+                <p id="shreyash">Multi-level permissions</p>
+                <p id="shreyash">Tailored onboarding</p>
+                <p id="shreyash">Premium support</p>
+                <p id="shreyash">Create a dashboard <br> that combines up to 50 <br> boards</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- drop down box -->
+
+    <p id="dropDownPTag">Complete features list </p>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- Above the symbol lines  -->
+    <div id="aboveTheSymbolLines">
+        <p>Over 152,000 customers worldwide rely on monday.com</p>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+    <!-- symbols logo  -->
+
+    <div id="logoSymbol">
+
+        <div>
+            <img alt="Hulu" class="jsx-4212101279 "
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hulu.png">
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/bd.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/canva.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nhl.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/coca_cola.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hubspot.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/Electronic_Arts.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nautica.png"
+                alt="">>
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/universal.png"
+                alt="">
+        </div>
+    </div>
+
+    <!-- -----------------------------------------------------------------------------------------------------------------------------   -->
+
+    <!-- slider automation  -->
+
+    <div class="slider-frame" style="margin-bottom: 200px;">
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="image/sam 1.png">
+            </div>
+            <div class="img-container">
+                <img src="image/sam 2.png">
+            </div>
+            <div class="img-container">
+                <img src="image/sam 3.png">
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- FAQ STARTS FROM HERE  -->
+    <div>
+        <section>
+            <div class="container">
+                <div class="accordion">
+                    <div class="accordion-item" id="question1">
+                        <h1 id="samH1">Frequently Asked Questions</h1>
+                        <a class="accordion-link" href="#question1">
+                            Is there a free version of monday.com?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Yes! Our Individual Plan is for independent professionals looking to keep track of their
+                                tasks and work. If you are interested in using only the most essential features of
+                                monday.com, this is the plan for you!
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question21">
+                        <a class="accordion-link" href="#question21">
+                            How much does monday.com cost?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                monday.com starts from $24 per month for 3 users and goes up from there based on your chosen
+                                plan and team size. If you are over 40 users, you can request a quote to get an exact price.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question2">
+                        <a class="accordion-link" href="#question2">
+                            Can you pay for monday.com monthly?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Yes, you can pay monthly for your account. Choose the monthly option on the pricing page and
+                                you will be able to pay on a per month basis. The monthly plan is not discounted so if you
+                                are looking to save, we recommend the yearly plan.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question3">
+                        <a class="accordion-link" href="#question3">
+                            How often do you go to beach?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto consectetur odio
+                                reiciendis
+                                dolorum rerum perferendis iure placeat, magnam ullam!
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question4">
+                        <a class="accordion-link" href="#question4">
+                            Which pricing plan is right for me?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                We understand that each organization is unique, requiring specific features to support its
+                                workflows and projects. Above you can see the features included in the different plans to
+                                support your needs. If you need help in choosing the right plan for you, check out this
+                                article or reach out to our sales team.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question5">
+                        <a class="accordion-link" href="#question5">
+                            How does our pricing work?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Our pricing is based on 2 variables: the feature plan you’d like to use, and the number of
+                                users on the platform. Once you’ve decided on the feature plan and users, choose your
+                                preferred subscription payment: month-to-month or annual. Payment is made in one upfront
+                                installment (so if you purchase a plan for one year, you will pay for one year upfront).
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question6">
+                        <a class="accordion-link" href="#question6">
+                            What if I change my mind?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                If you’ve paid for a yearly subscription in the last 30-days, and need to cancel your
+                                account, you are entitled to a prorated refund. We will automatically refund you the
+                                remaining balance from your original purchase. Simply cancel the account from the Admin
+                                section, and your account will be automatically refunded. If you have any questions, you can
+                                always reach out to support@monday.com
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question7">
+                        <a class="accordion-link" href="#question7">
+                            Do you offer any discounted plans?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>Yes, through choosing a yearly plan, you will receive an 18% discount.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question8">
+                        <a class="accordion-link" href="#question8">
+                            Does monday.com offer plans for students?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Yes, our Student Program offers great opportunities and options for students and student
+                                organizations who would like to implement monday.com in their classes. University/college
+                                students, student organisations, fraternities, and sororities can all join the student
+                                programs.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question9">
+                        <a class="accordion-link" href="#question9">
+                            Does monday.com offer plans to nonprofits and NGOs?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                monday.com is a proud supporter of organizations that do great things around the world.
+                                That’s why we offer discounted pricing for qualified nonprofit organisations. Click here to
+                                find out more about our nonprofit plan and pricing.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="accordion-item" id="question10">
+                        <a class="accordion-link" href="#question10">
+                            How can I manage my billing?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                If you are an admin of your account, you can access your purchase history, invoices, payment
+                                details, plan type, and more. Learn how to manage your billing details here.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question11">
+                        <a class="accordion-link" href="#question11">
+                            Can I change my plan?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                You can make changes to your plan at any time by changing your plan type and adding and
+                                removing users (Note that post the refund period, we offer no refunds for downgrades). To
+                                change your plan, simply go into the Admin section and click on the Billing option. From
+                                there, click on 'change plan', pick the desired plan, and enjoy!
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question12">
+                        <a class="accordion-link" href="#question12">
+                            How secure is monday.com?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                The security of our customer’s data is our top priority. monday.com is built with strict
+                                security requirements and protocols to secure your data, such as ISO/IEC 27001 and ISO/IEC
+                                27018, and is undergoing annual security audits and assessments. We use high physical,
+                                procedural, and technical security measures to preserve the integrity and security of your
+                                data, as well as adhering to the strictest data protection laws.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question13">
+                        <a class="accordion-link" href="#question13">
+                            What payment methods do you accept?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                We accept the following payment methods: All the major credit cards (excluding debit cards)
+                                - Visa, Master Card, American Express, Discover, Diners Club, JCB, Carte Bleue, Union Pay.
+                                You can also purchase your monday.com subscription with PayPal. (Note this may be subject to
+                                change depending on your location.)
+                                We accept invoices for Enterprise orders that meet a minimum fee - Feel free to reach out to
+                                support@monday.com for more information.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question14">
+                        <a class="accordion-link" href="#question14">
+                            Does monday.com offer plans for students?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Yes, our Student Program offers great opportunities and options for students and student
+                                organizations who would like to implement monday.com in their classes. University/college
+                                students, student organisations, fraternities, and sororities can all join the student
+                                programs.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item" id="question15">
+                        <a class="accordion-link" href="#question15">
+                            Do you have mobile apps?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Yes, the platform is available on both IOS and Android devices. You can download them on the
+                                Apple or Google Play Stores. Learn more here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+                                                  <!-- FAQ ENDED HERE  -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------   -->
+
+    <h1 style="color: red; margin: auto;text-align: center;margin-top: 400px;">&nbsp &nbsp</h1>
+    <div id="lastDiv2941">
+        <p>Start using monday.com today</p>
+        <p>Try it now for free / No credit card needed</p>
+        <button>Get Started</button>
     </div>
 </body>
+
 </html>
