@@ -354,16 +354,16 @@ letter-spacing: 1px;
 
 #homepage-mid-section>div:first-of-type .boxme:after{
     content: "";
-    position: absolute;
+    /* position: absolute; */
     background-color: rgb(87, 87, 239);
     height: 5px;
     width: 0%;
-    bottom: -510vh;
+    /* bottom: -510vh; */
 
 
 }
 #homepage-mid-section>div:first-of-type .boxme:hover:after{
-    width: 6%;
+    width: 60%;
 } 
 
 #homepage-mid-section>div:first-of-type .boxme:hover{
