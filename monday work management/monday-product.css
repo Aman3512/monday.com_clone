@@ -1,4 +1,12 @@
-        
+#footer-container{
+  padding: 5px;
+  margin: 5px;
+  }
+  
+  #footer-container p, h3{
+    padding: 10px;
+  }
+  
 #homepage-header{
   height: 100vh;
   margin-top: -70px;

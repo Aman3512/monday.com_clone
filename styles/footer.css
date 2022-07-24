@@ -2,11 +2,26 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  /* margin-top: 10px; */
 }
+
+#footer-container a{
+  color: black;
+}
+
+/* #footer-container{
+padding: 5px;
+margin: 5px;
+}
+
+#footer-container p, h3{
+  padding: 10px;
+} */
 
 #footer-container > #monday > img {
   width: 50%;
   height: 30px;
+  /* margin: 10px; */
 }
 #icon-1 > img,
 #icon-2 > img,
@@ -30,11 +45,11 @@
   display: flex;
 }
 
-h3,
+/* h3,
 p {
   color: grey;
   font-weight: lighter;
-}
+} */
 #monday,
 #features,
 #monday-products,
@@ -89,3 +104,10 @@ a {
 #resources p:hover {
   cursor: pointer;
 }
+
+/* *{
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+} */

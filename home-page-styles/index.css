@@ -633,9 +633,20 @@ margin-top: 50px;
     
 }
 
+#footer-container{
+padding: 5px;
+margin: 5px;
+}
+
+#footer-container p, h3{
+  padding: 10px;
+}
+
 *{
-    padding: 0px;
-    margin: 0px;
+    /* padding: 0px;
+    margin: 0px; */
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+

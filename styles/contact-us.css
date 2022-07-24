@@ -59,3 +59,13 @@ h3 {
   font-weight: lighter;
   font-size: 30px;
 }
+
+
+#footer-container{
+  padding: 5px;
+  margin: 5px;
+  }
+  
+  #footer-container p, h3{
+    padding: 10px;
+  }
