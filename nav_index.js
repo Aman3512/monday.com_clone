@@ -16,6 +16,11 @@ document.getElementById("products").addEventListener("click", () => {
   if (p == 0) {
     document.getElementById("navbar-display-board").innerHTML = products();
     p++;
+
+    document.getElementById("l_top2").addEventListener("click",()=>{
+      window.location.href = "./monday work management/monday-product.html"
+    })
+
   } else {
     document.getElementById("navbar-display-board").innerHTML = null;
     p = 0;

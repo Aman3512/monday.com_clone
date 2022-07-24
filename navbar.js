@@ -13,7 +13,7 @@ function sahil_navbar(){
 <div id="rightpart">
     <ul>
         <li><a href="pricing.html">  Pricing  </a></li>
-        <li><a href="contact-us.html">  Contact Sales</a></li>
+        <li><a href="./styles/contact-us.html">  Contact Sales</a></li>
         <li><a href="login.html">  Log in  </a></li>
     </ul>
     <button>Get Started</button>
@@ -33,7 +33,7 @@ function products(){
             <p>Products tailored to your teams' needs</p>
         </div>
         <!-- mondayworkmanagement -->
-        <div id="l_top2">
+        <div id="l_top2" style="cursor:pointer">
             <div id="top2_top">
                 <div id="top_left">
                 <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/wm_icon_footer.png" alt="">
@@ -51,7 +51,7 @@ function products(){
             </div>
         </div>
         <!-- mondaysalesCRM -->
-        <div id="l_top3">
+        <div id="l_top3" style="cursor:pointer">
             <div id="top3_top">
                 <div id="top3_left">
                 <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/crm_icon_footer.png" alt="">
@@ -70,7 +70,7 @@ function products(){
         </div>
         <!-- mondaydev -->
         <div>
-            <div id="l_top4">
+            <div id="l_top4" style="cursor:pointer">
                 <div id="top4_top">
                     <div id="top4_left">
                     <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/dev_icon_footer.png" alt="">
@@ -91,7 +91,7 @@ function products(){
     </div>
     <div id="sahilSecond">
         <!-- mondaymarketer -->
-        <div id="m_top2">
+        <div id="m_top2" style="cursor:pointer">
             <div id="mtop2_top">
                 <div id="mtop2_left">
                     <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/marketer_icon_footer.png" alt="">
@@ -109,7 +109,7 @@ function products(){
             </div>
         </div>
         <!-- mondayprojects -->
-        <div id="m_top3">
+        <div id="m_top3" style="cursor:pointer">
             <div id="mtop3_top">
                 <div id="mtop3_left">
                     <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/projects_icon_footer.png" alt="">
@@ -129,13 +129,13 @@ function products(){
     </div>
     <div id="sahilline">
     </div>
-    <div id="sahilFourth">
+    <div id="sahilFourth" style="cursor:pointer">
             <h4>- more by monday.com</h4>
-            <div id="fourthworkfoams">
+            <div id="fourthworkfoams" style="cursor:pointer">
                 <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/workforms_icon_footer.png" alt=""> 
                 <p>Work forms</p>   
             </div>
-            <div id="fourthCanvas">
+            <div id="fourthCanvas" style="cursor:pointer">
                 <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/canvas_icon_footer.png" alt="">
                 <p>Canvas</p> 
             </div>
