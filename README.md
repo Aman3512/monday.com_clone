@@ -2,7 +2,7 @@
 
 This repo is the clone of monday.com website, A platform that allows users to create their own applications and work management software.
 
-## Some Screeshots of our Project :-
+## Some Screenshots of our Project :-
 
 ### * Home Page 
 
