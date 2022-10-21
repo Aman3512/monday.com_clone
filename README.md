@@ -2,6 +2,20 @@
 
 This repo is the clone of monday.com website, A platform that allows users to create their own applications and work management software.
 
+### * Tech Stack
+
+- HTML
+- Java Script
+- CSS
+
+
+### * Team-Members
+
+- Aman Singh Rawat (Team Lead)
+- Shreyash Birajdar
+- Mushtaq Ansari
+- Sahil Vishwakarma
+
 ## Some Screenshots of our Project :-
 
 ### * Home Page 
