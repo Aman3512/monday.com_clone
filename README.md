@@ -1,20 +1,21 @@
 # Project Title : monday.com Clone Project
 
-This repo is the clone of monday.com website, A platform that allows users to create their own applications and work management software.
+This repo is the clone of ajio.com website, AJIO, a fashion and lifestyle brand, is Reliance Retail's digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you'll find anywhere.
 
 ### * Tech Stack
 
-- HTML
-- Java Script
-- CSS
+- React
+- Redux
+- Chakra UI
 
 
 ### * Team-Members
 
-- Aman Singh Rawat (Team Lead)
+- Shashank Bijapur (Team Lead)
+- Shagun Sharma
 - Shreyash Birajdar
-- Mushtaq Ansari
-- Sahil Vishwakarma
+- Vishal More
+- Supriya Sahoo
 
 ## Some Screenshots of our Project :-
 
